@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WISATA DUFAN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<table>
+    <table border="1" align="center" width="100%" bgcolor="orange">
+        <tr>
+            <td>
+                <h1 align="center">WELCOME TO WISATA DUFAN</h1>
+            </td>
+        </tr>
+
+    </table>
+</table>
+<table border="1" width="70%" align="center" bgcolor="cyan">
+    <tr>
+        <td><a href="wisata.html">Home</a></td>
+        <td><a href="paketwisata.html">Paket Wisata</a></td>
+        <td><a href="fasilitas.html">Fasilitas</a></td>
+        <td><a href="akomodasi.html">Akomodasi</a></td>
+        <td><a href="galeri.html">Galeri</a></td>
+        <td><a href="produk.html">Produk Dan Souvenir</a></td>
+        <td><a href="sejarahwisata.html">Sejarah Wisata</td>
+        <td><a href="lingkungan.html">Taman</a></td>
+        <td><a href="pedesaanjapan.html">Desa Japan</a></td>
+        <td><a href="about.html">About</a></td>
+        <td><a href="contact.html">Contact</a></td>
+    </tr>
+</table>
+<h2 align="center"><u>WISATA DUFAN</u></h2>
+    <div class="column">
+        <div class="card">
+            <center>
+            <img align="middle" src="ancol.jpg" width="50%" height="50%">
+            </center>
+            <p>Dunia Fantasi, atau lebih dikenal sebagai Dufan, adalah destinasi wisata yang mendebarkan di jantung Jakarta, Indonesia. Sebagai taman hiburan terbesar di negara ini, Dufan menawarkan pengalaman tak terlupakan bagi pengunjung dari segala usia.
+
+                <p>Keunikan Dufan terletak pada tema-tema yang beragam di dalamnya. Setiap zona membawa pengunjung ke dunia yang berbeda, mulai dari petualangan pahlawan super hingga nuansa magis dari negeri dongeng. Selain atraksi, berbagai pilihan makanan dan suvenir juga dapat ditemukan di seluruh taman, memastikan pengalaman yang lengkap bagi setiap pengunjung.
+                
+                <p>Tidak hanya sekadar taman hiburan, Dufan juga sering menjadi tempat penyelenggaraan acara-acara khusus, seperti festival musik, pesta perayaan, dan pameran seni. Ini menambah dimensi baru pada daya tarik Dufan sebagai tempat rekreasi serba ada.
+                
+                <p>Dengan reputasinya yang sudah mapan sebagai tempat rekreasi ikonik di Indonesia, Dufan terus memikat pengunjung dengan pengalaman yang penuh kegembiraan dan kegembiraan. Bagi siapa pun yang ingin menikmati hari penuh tawa, tontonan, dan petualangan, Dufan tetap menjadi pilihan yang tak terbantahkan.</p> 
+
+                <h1><p>UNDANG-UNDANG</p></h1>
+                <p>Tanggung jawab Pemerintah terhadap pengguna jasa/ konsumen Pasal 29 ayat (1) dan Pasal 30 ayat (1) Undang-Undang tentang Perlindungan Konsumen, perbuatan pengelola/ pelaku usaha jasa industri wisata tersebut dapat dilaporkan kepada pihak kepolisian dan Badan Penyelesaian Sengketa Konsumen (BPSK) Pemerintah Kabupaten/ Kota. Undang-Undang tentang Perlindungan Konsumen dalam Pasal 45 ayat (1), Setiap pengguna jasa/ konsumen yang dirugikan dapat menggugat pengelola/ pelaku usaha melalui lembaga yang bertugas menyelesaikan sengketa antara pengguna jasa/ konsumen dan pengelola/ pelaku usaha yaitu BPSK atau melalui peradilan yang berada di lingkungan peradilanumum.</p>
+        </div>
+    </div>
+
+
+
+    <canvas id="barChart"></canvas>
+
+    <!-- Buat script JavaScript untuk menggambar diagram -->
+    <script>
+        var ctx = document.getElementById('barChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['MINGGU KE 1', 'MINGGU KE 2' , 'MINGGU KE 3', 'MINGGU KE 4',],
+                datasets: [{
+                    label: 'DATA STATISTIK WISATA PENGUNJUNG WEBSITE WISATA DUFAN',
+                    data: [50, 70, 30, 45, 60], // Isi data Anda di sini
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+      
+
+
+</body>
+</html>
